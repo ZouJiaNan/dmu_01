@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.casit.dmu_1.mapper.mri.Mri_scan_infoMapper">
+    <insert id="add" parameterType="Mri_scan_info">
+        insert into mri_scan_info value(null, #{mri_record_id}, #{mri_device_type}, #{mri_field},
+                                #{T1_FSPGR}, #{T1W1}, #{water_AX_LAVA_FLEX_MASK}, #{fs_T2WI},
+                                #{DWI}, #{DTI}, #{DKI}, #{IVIM}, #{ESWAN},
+                                #{IDEAL_IQ}, #{MRS}, #{API}, #{mDIXON_Quant}, #{T1_mapping},
+                                 #{T2_mapping}, #{LAVA}, #{DCE_MRI}, #{other});
+    </insert>
+    <delete id="delete" parameterType="Integer">
+        delete from mri_scan_info where id=#{id};
+    </delete>
+</mapper>

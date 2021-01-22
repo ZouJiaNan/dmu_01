@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.casit.dmu_1.mapper.ct.Ct_imageMapper">
+    <insert id="add" useGeneratedKeys="true" keyProperty="id" parameterType="Ct_image">
+        insert into ct_image value(null, #{patient_id},#{ct_record_id});
+    </insert>
+    <delete id="delete" parameterType="Integer">
+        delete from ct_image where id=#{image_id};
+    </delete>
+    <select id="queryCt_imageIdByRecord_id" parameterType="Integer" resultType="Integer">
+        select id from ct_image where ct_record_id=#{record_id};
+    </select>
+</mapper>
