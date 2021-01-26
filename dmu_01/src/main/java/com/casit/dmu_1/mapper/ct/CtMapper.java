@@ -15,5 +15,5 @@ import java.util.List;
 @Mapper
 @Repository
 public interface CtMapper {
-    List<Ct> findAll();
+    List<Ct> queryAll();
 }

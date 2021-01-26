@@ -9,8 +9,10 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/liver?serverTimezone=UTC&useSSL=false&useUnicode=yes&characterEncoding=utf8
+#    username: root
+#    password: admin
     username: root
-    password: admin
+    password: wwq13849841939
     ##username: developer
     ##password: chenming
 

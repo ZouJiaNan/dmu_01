@@ -2,6 +2,7 @@ package com.casit.dmu_1.pojo.ct;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author WangWeiQing
@@ -12,6 +13,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Ct_scan_info {
     private int id;
     private int ct_record_id;

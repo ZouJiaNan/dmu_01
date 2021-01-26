@@ -71,7 +71,7 @@ public class MriServiceImpl implements MriService {
     }
 
     @Override
-    public List<Mri> quaryAll() {
-        return mriMapper.quaryAll();
+    public List<Mri> queryAll() {
+        return mriMapper.queryAll();
     }
 }
