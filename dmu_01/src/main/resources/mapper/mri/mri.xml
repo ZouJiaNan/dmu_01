@@ -105,7 +105,7 @@
         <result column="DCE-MSI" property="mri_quantification.DCE_MSI"></result>
         <result column="DCE-TTP" property="mri_quantification.DCE_TTP"></result>
     </resultMap>
-    <select id="quaryAll" resultMap="Mri_ResultMap">
+    <select id="queryAll" resultMap="Mri_ResultMap">
         select
         mri_record.id as record_id,
         mri_scan_info.*,

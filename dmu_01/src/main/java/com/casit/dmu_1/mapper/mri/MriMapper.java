@@ -16,5 +16,5 @@ import java.util.List;
 @Mapper
 @Repository
 public interface MriMapper {
-    List<Mri> quaryAll();
+    List<Mri> queryAll();
 }

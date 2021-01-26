@@ -4,6 +4,9 @@ import com.casit.dmu_1.pojo.ct.Ct;
 import com.casit.dmu_1.pojo.ct.Ct_scan_info;
 import com.casit.dmu_1.pojo.ct.Ct_Definiteness;
 import com.casit.dmu_1.pojo.ct.Ct_Quantification;
+import com.casit.dmu_1.pojo.mri.Mri;
+
+import java.util.List;
 
 /**
  * @author WangWeiQing
@@ -27,4 +30,10 @@ public interface CtService {
      * @return 返回 1 表示删除成功
      */
     int deleteCt_image(int record_id);
+
+    /**
+     * 查询所有
+     * @return 返回 List
+     */
+    List<Ct> queryAll();
 }

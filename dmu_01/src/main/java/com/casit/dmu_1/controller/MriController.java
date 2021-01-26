@@ -48,8 +48,8 @@ public class MriController {
     }
 
     @ApiOperation(value = "查找所有MRI信息",notes = "查找所有MRI信息")
-    @GetMapping("quaryAll")
-    public ResultBean quaryAll(){
-        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,mriService.quaryAll());
+    @GetMapping("queryAll")
+    public ResultBean queryAll(){
+        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,mriService.queryAll());
     }
 }

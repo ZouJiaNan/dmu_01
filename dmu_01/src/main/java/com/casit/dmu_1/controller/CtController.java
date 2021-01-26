@@ -10,6 +10,9 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
 /**
  * @author WangWeiQing
  * @version 1.0.0
@@ -42,5 +45,11 @@ public class CtController {
     @GetMapping("delete_ct_image")
     public ResultBean deleteCt_image(@RequestParam(value = "image_id") int image_id){
         return new ResultBean<Integer>(Statue.SUCCESS.code, Statue.SUCCESS.message, ctService.deleteCt_image(image_id));
+    }
+
+    @ApiOperation(value = "查找所有CT信息",notes = "查找所有Ct信息")
+    @GetMapping("queryAll")
+    public ResultBean queryAll(){
+        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,ctService.queryAll());
     }
 }

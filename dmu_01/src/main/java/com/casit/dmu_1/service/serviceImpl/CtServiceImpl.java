@@ -2,10 +2,13 @@ package com.casit.dmu_1.service.serviceImpl;
 
 import com.casit.dmu_1.mapper.ct.*;
 import com.casit.dmu_1.pojo.ct.*;
+import com.casit.dmu_1.pojo.mri.Mri;
 import com.casit.dmu_1.service.CtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * @author WangWeiQing
@@ -29,6 +32,8 @@ public class CtServiceImpl implements CtService {
     Ct_DefinitenessMapper definiteness_ctMapper;
     @Autowired
     Ct_QuantificationMapper quantification_ctMapper;
+    @Autowired
+    CtMapper ctMapper;
 
     @Override
     @Transactional
@@ -67,5 +72,10 @@ public class CtServiceImpl implements CtService {
         definiteness_ctMapper.delete(image_id);
         quantification_ctMapper.delete(image_id);
         return 1;
+    }
+
+    @Override
+    public List<Ct> queryAll() {
+        return ctMapper.queryAll();
     }
 }

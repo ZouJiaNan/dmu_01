@@ -30,8 +30,8 @@ public interface MriService {
     int deleteMri_image(int image_id);
 
     /**
-     * 按批次删除
+     * 查询所有
      * @return 返回 List
      */
-    List<Mri> quaryAll();
+    List<Mri> queryAll();
 }
