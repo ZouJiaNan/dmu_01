@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
+        <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
-        <lombok.version>1.18.10</lombok.version>
+        <lombok.version>1.16.18</lombok.version>
         <mysql.version>5.1.47</mysql.version>
         <druid.version>1.1.16</druid.version>
         <mybatis.version>2.0.1</mybatis.version>
@@ -65,7 +65,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
         </dependency>
         <!--部署依赖的servlet-->
         <dependency>
@@ -86,62 +85,62 @@
             <version>2.8.0</version>
         </dependency>
 
-<!--        &lt;!&ndash;dicome解析依赖&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-core</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-image</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-imageio</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-imageio-opencv</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-imageio-rle</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-tool-common</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>dcm4che-tool-dcm2jpg</artifactId>-->
-<!--            <version>5.22.5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dcm4che</groupId>-->
-<!--            <artifactId>weasis-opencv-core</artifactId>-->
-<!--            <version>3.0.4</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;<dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-api</artifactId>-->
-<!--            <version>1.7.22</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-log4j12</artifactId>-->
-<!--            <version>1.7.22</version>-->
-<!--        </dependency>&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.ij</groupId>-->
-<!--            <artifactId>ij</artifactId>-->
-<!--            <version>1.0.0</version>-->
-<!--        </dependency>-->
+        <!--dicome解析依赖-->
+        <dependency>
+            <groupId>org.dcm4che</groupId>
+            <artifactId>dcm4che-core</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-image</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-imageio</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-imageio-opencv</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-imageio-rle</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-tool-common</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>dcm4che-tool-dcm2jpg</artifactId>
+            <version>5.22.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dcm4che</groupId>
+            <artifactId>weasis-opencv-core</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.22</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.22</version>
+        </dependency>-->
+        <dependency>
+            <groupId>com.ij</groupId>
+            <artifactId>ij</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>commons-cli</groupId>
             <artifactId>commons-cli</artifactId>
@@ -149,22 +148,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

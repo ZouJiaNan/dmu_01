@@ -105,7 +105,7 @@
         <result column="DCE-MSI" property="mri_quantification.DCE_MSI"></result>
         <result column="DCE-TTP" property="mri_quantification.DCE_TTP"></result>
     </resultMap>
-    <select id="queryAll" resultMap="Mri_ResultMap">
+    <select id="queryAll" resultMap="Mri_ResultMap" parameterType="Integer">
         select
         mri_record.id as record_id,
         mri_scan_info.*,
@@ -117,5 +117,6 @@
 				and mri_scan_info.mri_record_id=mri_record.id
                 and mri_definiteness.mri_image_id=mri_image.id
                 and mri_quantification.mri_image_id=mri_image.id
+                and mri_image.patient_id=#{patient_id}
     </select>
 </mapper>

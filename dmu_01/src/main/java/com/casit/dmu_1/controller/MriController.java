@@ -31,9 +31,7 @@ public class MriController {
 
     @ApiOperation(value = "增加MRI",notes = "增加MRI")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="mri_scan_info",value = "扫描信息"),
-            @ApiImplicitParam(name="definiteness_mri",value = "定性结果"),
-            @ApiImplicitParam(name="quantification_mri",value = "定量结果")
+            @ApiImplicitParam(name="mri",value = "mri信息"),
     })
     @PostMapping("add")
     public ResultBean add(@RequestBody Mri mri){
@@ -49,7 +47,7 @@ public class MriController {
 
     @ApiOperation(value = "查找所有MRI信息",notes = "查找所有MRI信息")
     @GetMapping("queryAll")
-    public ResultBean queryAll(){
-        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,mriService.queryAll());
+    public ResultBean queryAll(int patient_id){
+        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,mriService.queryAll(patient_id));
     }
 }

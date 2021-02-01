@@ -40,17 +40,17 @@ public class CtServiceImpl implements CtService {
     public int add(Ct ct) {
         //在数据库中添加一个新的批次并获取批次号
         Ct_record ct_record=new Ct_record();
-        ct_recordMapper.add_ct_record(ct_record);
+        ct_recordMapper.add(ct_record);
         int ct_record_id=ct_record.getId();
 
         //模拟添加一个新的影像并获取影像号(此处留给OSS插入)
-        Ct_image ct_image = new Ct_image(0, 1,ct_record.getId());
+        Ct_image ct_image = new Ct_image(0, 1,ct_record_id);
         ct_imageMapper.add(ct_image);
         int ct_image_id=ct_image.getId();
 
-        //为扫描信息设置mri批次编号
+        //为扫描信息设置ct批次编号
         ct.ct_scan_info.setCt_record_id(ct_record_id);
-        //为mri定性、定量信息设置图片编号
+        //为ct定性、定量信息设置图片编号
         ct.ct_definiteness.setCt_image_id(ct_image_id);
         ct.ct_quantification.setCt_image_id(ct_image_id);
 
@@ -75,7 +75,7 @@ public class CtServiceImpl implements CtService {
     }
 
     @Override
-    public List<Ct> queryAll() {
-        return ctMapper.queryAll();
+    public List<Ct> queryAll(int patient_id) {
+        return ctMapper.queryAll(patient_id);
     }
 }

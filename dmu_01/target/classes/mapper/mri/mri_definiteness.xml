@@ -5,12 +5,35 @@
 
 <mapper namespace="com.casit.dmu_1.mapper.mri.Mri_DefinitenessMapper">
     <insert id="add" parameterType="Mri_Definiteness">
-        insert into mri_definiteness value(null, #{mri_image_id}, #{位置}, #{主要肝段},
-                                #{T1WI信号}, #{T2WI信号}, #{DWI信号}, #{强化包膜}, #{包膜完整性}, #{非强化包膜},
-                                #{瘤内出血}, #{瘤内坏死}, #{瘤内脂质沉淀}, #{静脉血栓形成}, #{动脉期高强化},
-                                #{廓清表现}, #{动脉期非环状高强化}, #{非周边廓清}, #{肝硬化}, #{瘤内动脉},
-                                #{肿瘤边缘}, #{肿瘤边界}, #{瘤周强化}, #{阈值增长}, #{亚阈值增长},
-                                #{结中结征}, #{马赛克征}, #{other});
+        insert into mri_definiteness value(
+            null,
+            #{mri_image_id},
+            #{station},
+            #{main_liver},
+            #{T1WI_signal},
+            #{T2WI_signal},
+            #{DWI_signal},
+            #{strengthen_bm},
+            #{BaoMoWanZhengXing},
+            #{FeiQiangHuaBaoMo},
+            #{LiuNeiChuXue},
+            #{LiuNeiHuaiSi},
+            #{LiuNeiZhiZhiChenJi},
+            #{JingMaiXueShuanXingCheng},
+            #{DongMaiQiGaoQiangHua},
+            #{KuoQingBiaoXian},
+            #{DongMaiQiGaoQiangHua},
+            #{FeiZhouBianKuoQing},
+            #{cirrhosis},
+            #{LiuNeiDongMai},
+            #{ZhongLiuBianYuan},
+            #{ZhongLiuBianJie},
+            #{LiuZhouQiangHua},
+            #{YuZhiZengZhang},
+            #{YaYuZhiZengZhang},
+            #{JieZhongJieZheng},
+            #{MaSaiKeZheng},
+            #{other});
     </insert>
     <delete id="delete" parameterType="Integer">
         delete from mri_definiteness where mri_image_id=#{image_id};

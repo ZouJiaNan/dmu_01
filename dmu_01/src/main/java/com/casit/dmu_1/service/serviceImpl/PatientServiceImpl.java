@@ -6,6 +6,8 @@ import com.casit.dmu_1.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author WangWeiQing
  * @version 1.0.0
@@ -28,5 +30,10 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public int deletePatient(int id) {
         return patientMapper.deletePatient(id);
+    }
+
+    @Override
+    public List<Patient> queryAll() {
+        return patientMapper.queryAll();
     }
 }

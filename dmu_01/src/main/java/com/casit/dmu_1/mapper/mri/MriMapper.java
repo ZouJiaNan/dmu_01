@@ -2,6 +2,7 @@ package com.casit.dmu_1.mapper.mri;
 
 import com.casit.dmu_1.pojo.mri.Mri;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.sql.SQLOutput;
@@ -16,5 +17,5 @@ import java.util.List;
 @Mapper
 @Repository
 public interface MriMapper {
-    List<Mri> queryAll();
+    List<Mri> queryAll(@Param("patient_id") int patient_id);
 }

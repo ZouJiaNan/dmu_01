@@ -2,6 +2,8 @@ package com.casit.dmu_1.service;
 
 import com.casit.dmu_1.pojo.Patient;
 
+import java.util.List;
+
 /**
  * @author WangWeiQing
  * @version 1.0.0
@@ -25,4 +27,5 @@ public interface PatientService {
      */
     int deletePatient(int id);
 
+    List<Patient> queryAll();
 }

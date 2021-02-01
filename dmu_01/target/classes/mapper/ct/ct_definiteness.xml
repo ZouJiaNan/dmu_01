@@ -5,12 +5,13 @@
 
 <mapper namespace="com.casit.dmu_1.mapper.ct.Ct_DefinitenessMapper">
     <insert id="add" parameterType="Ct_Definiteness">
-        insert into ct_definiteness value(null, #{ct_image_id}, #{位置}, #{主要肝段},
-                                #{平扫密度}, #{强化包膜}, #{包膜完整性}, #{非强化包膜},
-                                #{瘤内出血}, #{瘤内坏死}, #{瘤内脂质沉积}, #{静脉血栓形成}, #{动脉期高强化},
-                                #{廓清表现}, #{动脉期非环状高强化}, #{非周边廓清}, #{肝硬化}, #{瘤内动脉},
-                                #{肿瘤边缘}, #{肿瘤边界}, #{瘤周强化}, #{阈值增长}, #{亚阈值增长},
-                                #{结中结征}, #{马赛克征}, #{other});
+        insert into ct_definiteness value(null, #{ct_image_id}, #{station}, #{main_liver},
+                                #{scan_density}, #{strengthen_bm}, #{BaoMoWanZhengXing}, #{FeiQiangHuaBaoMo},
+                                #{LiuNeiChuXue}, #{LiuNeiHuaiSi}, #{LiuNeiZhiZhiChenJi}, #{JingMaiXueShuanXingCheng},
+                                #{ DongMaiQiGaoQiangHua},#{KuoQingBiaoXian}, #{DongMaiQiFeiHuanZhuangGaoQiangHua},
+                                #{FeiZhouBianKuoQing}, #{cirrhosis}, #{LiuNeiDongMai},#{ZhongLiuBianYuan},
+                                #{ZhongLiuBianJie}, #{LiuZhouQiangHua}, #{YuZhiZengZhang}, #{YaYuZhiZengZhang},
+                                #{JieZhongJieZheng}, #{MaSaiKeZheng}, #{other});
     </insert>
     <delete id="delete" parameterType="Integer">
         delete from ct_definiteness where ct_image_id=#{image_id};

@@ -2,6 +2,7 @@ package com.casit.dmu_1.mapper.ct;
 
 import com.casit.dmu_1.pojo.ct.Ct;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -15,5 +16,5 @@ import java.util.List;
 @Mapper
 @Repository
 public interface CtMapper {
-    List<Ct> queryAll();
+    List<Ct> queryAll(@Param("patient_id") Integer patient_id);
 }

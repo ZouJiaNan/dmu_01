@@ -1,10 +1,6 @@
 package com.casit.dmu_1.service;
 
 import com.casit.dmu_1.pojo.ct.Ct;
-import com.casit.dmu_1.pojo.ct.Ct_scan_info;
-import com.casit.dmu_1.pojo.ct.Ct_Definiteness;
-import com.casit.dmu_1.pojo.ct.Ct_Quantification;
-import com.casit.dmu_1.pojo.mri.Mri;
 
 import java.util.List;
 
@@ -35,5 +31,5 @@ public interface CtService {
      * 查询所有
      * @return 返回 List
      */
-    List<Ct> queryAll();
+    List<Ct> queryAll(int patient_id);
 }

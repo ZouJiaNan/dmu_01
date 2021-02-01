@@ -33,5 +33,5 @@ public interface MriService {
      * 查询所有
      * @return 返回 List
      */
-    List<Mri> queryAll();
+    List<Mri> queryAll(int patient_id);
 }

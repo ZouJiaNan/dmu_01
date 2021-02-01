@@ -31,9 +31,7 @@ public class CtController {
 
     @ApiOperation(value = "增加CT",notes = "增加CT")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="ct_scan_info",value = "扫描信息"),
-            @ApiImplicitParam(name="ct_definiteness",value = "定性结果"),
-            @ApiImplicitParam(name="ct_quantification",value = "定量结果")
+            @ApiImplicitParam(name="ct",value = "ct信息"),
     })
     @PostMapping("add")
     public ResultBean add(@RequestBody Ct ct){
@@ -49,7 +47,7 @@ public class CtController {
 
     @ApiOperation(value = "查找所有CT信息",notes = "查找所有Ct信息")
     @GetMapping("queryAll")
-    public ResultBean queryAll(){
-        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,ctService.queryAll());
+    public ResultBean queryAll(int patient_id){
+        return new ResultBean<List>(Statue.SUCCESS.code,Statue.SUCCESS.message,ctService.queryAll(patient_id));
     }
 }

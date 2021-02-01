@@ -9,6 +9,9 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
 /**
  * @author WangWeiQing
  * @version 1.0.0
@@ -37,5 +40,11 @@ public class PatientController {
     @GetMapping("delete")
     public ResultBean delete(@RequestParam(value = "id") int id){
         return new ResultBean<Integer>(Statue.SUCCESS.code, Statue.SUCCESS.message, patientService.deletePatient(id));
+    }
+
+    @ApiOperation(value = "查询所有病患",notes = "查询所有病患")
+    @GetMapping("queryAll")
+    public ResultBean queryAll(){
+        return new ResultBean<List>(Statue.SUCCESS.code, Statue.SUCCESS.message, patientService.queryAll());
     }
 }

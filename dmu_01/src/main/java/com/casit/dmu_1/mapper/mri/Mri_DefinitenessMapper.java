@@ -17,10 +17,10 @@ import org.springframework.stereotype.Repository;
 public interface Mri_DefinitenessMapper {
     /**
      * 添加MRI定性结果
-     * @param definiteness_mri 需要添加的MRI定性结果
+     * @param mri_definiteness 需要添加的MRI定性结果
      * @return 更改的行数
      */
-    int add(Mri_Definiteness definiteness_mri);
+    int add(Mri_Definiteness mri_definiteness);
 
     /**
      * 删除MRI定性结果

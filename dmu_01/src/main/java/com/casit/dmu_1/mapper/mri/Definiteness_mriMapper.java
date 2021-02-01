@@ -1,6 +1,6 @@
 package com.casit.dmu_1.mapper.mri;
 
-import com.casit.dmu_1.pojo.mri.Definiteness_mri;
+import com.casit.dmu_1.pojo.mri.Mri_Definiteness;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -14,10 +14,10 @@ import org.apache.ibatis.annotations.Mapper;
 public interface Definiteness_mriMapper {
     /**
      * 添加MRI定性结果
-     * @param definiteness_mri 需要添加的MRI定性结果
+     * @param mri_definiteness 需要添加的MRI定性结果
      * @return 更改的行数
      */
-    int addDefiniteness_mri(Definiteness_mri definiteness_mri);
+    int addDefiniteness_mri(Mri_Definiteness mri_definiteness);
 
     /**
      * 删除MRI定性结果

@@ -5,11 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author WangWeiQing
+ * @author ZouJiaNan
  * @version 1.0.0
- * @Description
- *      MRI定性结果
- * @createTime 2020/12/22
+ * @Description TODO
+ * @createTime 2021年02月01日 14:32:00
  */
 @Data
 @AllArgsConstructor
@@ -17,30 +16,31 @@ import lombok.NoArgsConstructor;
 public class Mri_Definiteness {
     private int id;
     private int mri_image_id;
-    private String 位置;
-    private String 主要肝段;
-    private String T1WI信号;
-    private String T2WI信号;
-    private String DWI信号;
-    private int 强化包膜;
-    private int 包膜完整性;
-    private int 非强化包膜;
-    private int 瘤内出血;
-    private int 瘤内坏死;
-    private int 瘤内脂质沉淀;
-    private int 静脉血栓形成;
-    private int 动脉期高强化;
-    private int 廓清表现;
-    private int 动脉期非环状高强化;
-    private int 非周边廓清;
-    private int 肝硬化;
-    private int 瘤内动脉;
-    private String 肿瘤边缘;
-    private String 肿瘤边界;
-    private int 瘤周强化;
-    private int 阈值增长;
-    private int 亚阈值增长;
-    private int 结中结征;
-    private int 马赛克征;
+    private String station;
+    private String main_liver;
+    private String T1WI_signal;
+    private String T2WI_signal;
+    private String DWI_signal;
+    private int strengthen_bm;
+    private int BaoMoWanZhengXing;
+    private int FeiQiangHuaBaoMo;
+    private int LiuNeiChuXue;
+    private int LiuNeiHuaiSi;
+    private int LiuNeiZhiZhiChenJi;
+    private int JingMaiXueShuanXingCheng;
+    private int DongMaiQiGaoQiangHua;
+    private int KuoQingBiaoXian;
+    private int DongMaiQiFeiHuanZhuangGaoQiangHua;
+    private int FeiZhouBianKuoQing;
+    private int cirrhosis;
+    private int LiuNeiDongMai;
+    private String ZhongLiuBianYuan;
+    private String ZhongLiuBianJie;
+    private int  LiuZhouQiangHua;
+    private int  YuZhiZengZhang;
+    private int  YaYuZhiZengZhang;
+    private int  JieZhongJieZheng;
+    private int  MaSaiKeZheng;
     private String other;
+
 }

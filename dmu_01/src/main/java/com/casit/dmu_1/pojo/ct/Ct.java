@@ -1,7 +1,5 @@
 package com.casit.dmu_1.pojo.ct;
 
-import com.casit.dmu_1.pojo.mri.Mri_image;
-import com.casit.dmu_1.pojo.mri.Mri_record;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

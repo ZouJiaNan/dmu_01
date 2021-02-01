@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: casit_dmu_1
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/liver?serverTimezone=UTC&useSSL=false&useUnicode=yes&characterEncoding=utf8
+    #username: root
+    #password: admin
+
+    username: developer
+    password: chenming
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml,classpath:mapper/ct/*.xml,classpath:mapper/mri/*.xml
+  type-aliases-package: com.casit.dmu_1.pojo

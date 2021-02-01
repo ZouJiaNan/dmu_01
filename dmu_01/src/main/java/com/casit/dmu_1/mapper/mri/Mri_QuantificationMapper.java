@@ -18,10 +18,10 @@ import org.springframework.stereotype.Repository;
 public interface Mri_QuantificationMapper {
     /**
      * 添加MRI定量结果
-     * @param quantification_mri 需要添加的MRI定量结果
+     * @param mri_quantification 需要添加的MRI定量结果
      * @return 更改的行数
      */
-    int add(Mri_Quantification quantification_mri);
+    int add(Mri_Quantification mri_quantification);
 
     /**
      * 删除MRI定量结果

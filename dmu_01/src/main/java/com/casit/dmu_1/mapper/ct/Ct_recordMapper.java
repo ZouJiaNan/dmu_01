@@ -21,12 +21,12 @@ public interface Ct_recordMapper {
      * @param  ct_record 占位使用
      * @return 新增数据的id
      */
-    int add_ct_record(Ct_record ct_record);
+    int add(Ct_record ct_record);
 
     /**
      * 删除CT批次
      * @param id 需要删除的CT批次id
      * @return 更改的行数
      */
-    int deleteCt_record(int id);
+    int delete(int id);
 }

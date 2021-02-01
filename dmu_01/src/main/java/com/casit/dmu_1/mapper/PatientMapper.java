@@ -2,6 +2,9 @@ package com.casit.dmu_1.mapper;
 
 import com.casit.dmu_1.pojo.Patient;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author WangWeiQing
@@ -12,6 +15,7 @@ import org.apache.ibatis.annotations.Mapper;
  */
 
 @Mapper
+@Repository
 public interface PatientMapper {
     /**
      * 添加病患
@@ -26,4 +30,6 @@ public interface PatientMapper {
      * @return 更改的行数
      */
     int deletePatient(int id);
+
+    List<Patient> queryAll();
 }

@@ -120,7 +120,7 @@
         <result column="能谱CT-延迟期130keV单能量CT值" property="ct_quantification.能谱CT_延迟期130keV单能量CT值"></result>
         <result column="能谱CT-延迟期140keV单能量CT值" property="ct_quantification.能谱CT_延迟期140keV单能量CT值"></result>
     </resultMap>
-    <select id="queryAll" resultMap="Ct_ResultMap">
+    <select id="queryAll" resultMap="Ct_ResultMap" parameterType="Integer">
         select
         ct_record.id as record_id,
         ct_scan_info.*,
@@ -132,5 +132,6 @@
 				and ct_scan_info.ct_record_id=ct_record.id
                 and ct_definiteness.ct_image_id=ct_image.id
                 and ct_quantification.ct_image_id=ct_image.id
+                and ct_image.patient_id=#{patient_id}
     </select>
 </mapper>
