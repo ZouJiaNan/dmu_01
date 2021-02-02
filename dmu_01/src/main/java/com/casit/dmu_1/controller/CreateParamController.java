@@ -26,33 +26,38 @@ public class CreateParamController {
         Mri_Definiteness definiteness_mri=new Mri_Definiteness();
         Mri_Quantification quantification_mri=new Mri_Quantification();
 
-        Field[] Mri_add_Bean_Fields= Mri.class.getDeclaredFields();
-        for (Field field:Mri_add_Bean_Fields) {
+        Field[] Mri_Fields= Mri.class.getDeclaredFields();
+        for (Field field:Mri_Fields) {
             try {
                 Field[] Child_Fields=Class.forName(field.getGenericType().getTypeName()).getDeclaredFields();
                 for (Field Child_Field:Child_Fields) {
+                    /*if(field.getGenericType().equals(Mri_scan_info.class)){
+                        if(Child_Field.getGenericType().equals(int.class)){
+                            System.out.println(Child_Field);
+                        }
+                    }*/
                     Child_Field.setAccessible(true);
                     if(field.getGenericType().equals(Mri_scan_info.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType().equals(String.class)) {
                             Child_Field.set(mri_scan_info, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType().equals(int.class)) {
                             Child_Field.set(mri_scan_info, 1);
                         }
                     }
                     if(field.getGenericType().equals(Mri_Definiteness.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType().equals(String.class)) {
                             Child_Field.set(definiteness_mri, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType().equals(int.class)) {
                             Child_Field.set(definiteness_mri, 1);
                         }
                     }
                     if(field.getGenericType().equals(Mri_Quantification.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType().equals(String.class)) {
                             Child_Field.set(quantification_mri, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType().equals(int.class)) {
                             Child_Field.set(quantification_mri, 1);
                         }
                     }
@@ -81,26 +86,26 @@ public class CreateParamController {
                 for (Field Child_Field:Child_Fields) {
                     Child_Field.setAccessible(true);
                     if(field.getGenericType().equals(Ct_scan_info.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType()==String.class) {
                             Child_Field.set(ct_scan_info, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType()==int.class) {
                             Child_Field.set(ct_scan_info, 1);
                         }
                     }
                     if(field.getGenericType().equals(Ct_Definiteness.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType()==String.class) {
                             Child_Field.set(ct_definiteness, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType()==int.class) {
                             Child_Field.set(ct_definiteness, 1);
                         }
                     }
                     if(field.getGenericType().equals(Ct_Quantification.class)){
-                        if(field.getGenericType()==String.class) {
+                        if(Child_Field.getGenericType()==String.class) {
                             Child_Field.set(ct_quantification, "test");
                         }
-                        if(field.getGenericType()==int.class) {
+                        if(Child_Field.getGenericType()==int.class) {
                             Child_Field.set(ct_quantification, 1);
                         }
                     }

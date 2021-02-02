@@ -9,7 +9,7 @@
                                         #{phone_number}, #{create_user}, #{create_time});
     </insert>
     <delete id="deletePatient" parameterType="Integer">
-        delete from patient where id=#{id};
+        delete from patient where patient_id=#{id};
     </delete>
     <select id="queryAll" resultType="Patient">
         select *  from patient;

@@ -15,8 +15,6 @@ com\casit\dmu_1\mapper\ct\Ct_scan_infoMapper.class
 com\casit\dmu_1\pojo\mri\Mri_Definiteness.class
 com\casit\dmu_1\pojo\ResultBean.class
 com\casit\dmu_1\pojo\mri\Mri.class
-com\casit\dmu_1\pojo\mri\Mri_add_Bean.class
-com\casit\dmu_1\pojo\mri\Quantification_mri.class
 com\casit\dmu_1\mapper\mri\MriMapper.class
 com\casit\dmu_1\controller\MriController.class
 com\casit\dmu_1\service\PatientService.class
@@ -32,9 +30,9 @@ com\casit\dmu_1\controller\CreateParamController.class
 com\casit\dmu_1\pojo\ct\Ct_record.class
 com\casit\dmu_1\service\MriService.class
 com\casit\dmu_1\pojo\mri\Mri_record.class
-com\casit\dmu_1\pojo\mri\Definiteness_mri.class
 com\casit\dmu_1\pojo\mri\Mri_Quantification.class
 com\casit\dmu_1\pojo\Patient.class
+com\casit\dmu_1\controller\test.class
 com\casit\dmu_1\pojo\ct\Ct_Quantification.class
 com\casit\dmu_1\service\serviceImpl\PatientServiceImpl.class
 com\casit\dmu_1\controller\TestController.class

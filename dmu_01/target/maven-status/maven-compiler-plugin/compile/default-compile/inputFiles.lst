@@ -9,7 +9,6 @@ D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\ct\Ct_DefinitenessMappe
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\mri\Definiteness_mriMapper.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\mri\Mri_recordMapper.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\PatientMapper.java
-D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\mri\Quantification_mri.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\mri\Mri_DefinitenessMapper.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\controller\CtController.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\mri\Mri_scan_infoMapper.java
@@ -24,9 +23,7 @@ D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\controller\MriController.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\mri\Mri_image.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\config\SwaggerConfig.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\controller\PatientController.java
-D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\mri\Definiteness_mri.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\ct\Ct_image.java
-D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\mri\Mri_add_Bean.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\service\serviceImpl\MriServiceImpl.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\mri\Quantification_mriMapper.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\Patient.java
@@ -44,5 +41,6 @@ D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\mapper\ct\Ct_QuantificationMap
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\service\MriService.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\service\serviceImpl\CtServiceImpl.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\util\dicomeUtil.java
+D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\controller\test.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\Statue.java
 D:\国自然\dmu_01\src\main\java\com\casit\dmu_1\pojo\ct\Ct_scan_info.java
