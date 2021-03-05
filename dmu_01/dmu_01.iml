@@ -40,10 +40,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.2.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.27" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.27" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.27" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-validation:2.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:6.0.18.Final" level="project" />
@@ -116,15 +112,5 @@
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.dcm4che:dcm4che-core:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-image:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-imageio:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-imageio-opencv:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-imageio-rle:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-tool-common:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:dcm4che-tool-dcm2jpg:5.22.5" level="project" />
-    <orderEntry type="library" name="Maven: com.dcm4che:weasis-opencv-core:3.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.ij:ij:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
   </component>
 </module>

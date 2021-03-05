@@ -2,6 +2,7 @@ package com.casit.dmu_1.mapper;
 
 import com.casit.dmu_1.pojo.Patient;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -26,10 +27,10 @@ public interface PatientMapper {
 
     /**
      * 根据id删除病患
-     * @param id 需要删除的病患id
+     * @param patient_id 需要删除的病患id
      * @return 更改的行数
      */
-    int deletePatient(int id);
+    int deletePatient(@Param("patient_id") int patient_id);
 
     List<Patient> queryAll();
 }

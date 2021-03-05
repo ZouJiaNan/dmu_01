@@ -3,6 +3,7 @@ package com.casit.dmu_1.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Date;
@@ -16,6 +17,7 @@ import java.util.Date;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Patient {
     private int patient_id;
     private String name;

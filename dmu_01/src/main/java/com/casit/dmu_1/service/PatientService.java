@@ -22,10 +22,10 @@ public interface PatientService {
 
     /**
      * 根据id删除病患
-     * @param id 需要删除的病患id
+     * @param patient_id 需要删除的病患id
      * @return 更改的行数
      */
-    int deletePatient(int id);
+    int deletePatient(int patient_id);
 
     List<Patient> queryAll();
 }

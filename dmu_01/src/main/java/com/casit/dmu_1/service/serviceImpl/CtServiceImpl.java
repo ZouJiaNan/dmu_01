@@ -44,7 +44,7 @@ public class CtServiceImpl implements CtService {
         int ct_record_id=ct_record.getId();
 
         //模拟添加一个新的影像并获取影像号(此处留给OSS插入)
-        Ct_image ct_image = new Ct_image(0, 1,ct_record_id);
+        Ct_image ct_image = new Ct_image(0, ct.patient.getPatient_id(),ct_record_id);
         ct_imageMapper.add(ct_image);
         int ct_image_id=ct_image.getId();
 

@@ -28,8 +28,8 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public int deletePatient(int id) {
-        return patientMapper.deletePatient(id);
+    public int deletePatient(int patient_id) {
+        return patientMapper.deletePatient(patient_id);
     }
 
     @Override

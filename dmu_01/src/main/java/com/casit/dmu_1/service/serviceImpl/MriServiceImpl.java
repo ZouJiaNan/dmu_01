@@ -42,7 +42,7 @@ public class MriServiceImpl implements MriService {
         int mri_record_id=mri_record.getId();
 
         //模拟添加一个新的影像
-        Mri_image mri_image = new Mri_image(0,1, mri_record_id);
+        Mri_image mri_image = new Mri_image(0,mri.patient.getPatient_id(), mri_record_id);
         mri_imageMapper.add(mri_image);
         int mri_image_id=mri_image.getId();
 

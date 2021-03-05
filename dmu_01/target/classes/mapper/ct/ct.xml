@@ -11,6 +11,7 @@
         <result column="record_id" property="ct_image.ct_record_id"></result>
 
         <!--ct_scan_info-->
+        <result column="ct_scan_info_id" property="ct_scan_info.id"></result>
         <result column="model" property="ct_scan_info.model"></result>
         <result column="g_voltage" property="ct_scan_info.g_voltage"></result>
         <result column="g_electric" property="ct_scan_info.g_electric"></result>
@@ -28,6 +29,7 @@
         <result column="strengthen_3th_scan" property="ct_scan_info.strengthen_3th_scan"></result>
 
         <!--ct_definiteness-->
+        <result column="ct_definiteness_id" property="ct_definiteness.id"></result>
         <result column="ct_image_id" property="ct_definiteness.ct_image_id"></result>
         <result column="station" property="ct_definiteness.station"></result>
         <result column="main_liver" property="ct_definiteness.main_liver"></result>
@@ -54,6 +56,7 @@
         <result column="MaSaiKeZheng" property="ct_definiteness.MaSaiKeZheng"></result>
 
         <!--ct_quantification-->
+        <result column="ct_quantification_id" property="ct_quantification.id"></result>
         <result column="ct_image_id" property="ct_quantification.ct_image_id"></result>
         <result column="DaXiao_ChangJing" property="ct_quantification.DaXiao_ChangJing"></result>
         <result column="DaXiao_DuanJing" property="ct_quantification.DaXiao_DuanJing"></result>
@@ -123,9 +126,12 @@
     <select id="queryAll" resultMap="Ct_ResultMap" parameterType="Integer">
         select
         ct_record.id as record_id,
-        ct_scan_info.*,
+		ct_scan_info.id as ct_scan_info_id,
+		ct_scan_info.*,
         ct_image.id as image_id,ct_image.patient_id,
-        ct_definiteness.*,
+        ct_definiteness.id as ct_definiteness_id,
+		ct_definiteness.*,
+		ct_quantification.id as ct_quantification_id,
         ct_quantification.*
         from ct_record,ct_scan_info,ct_image,ct_definiteness,ct_quantification
         where ct_record.id=ct_image.ct_record_id

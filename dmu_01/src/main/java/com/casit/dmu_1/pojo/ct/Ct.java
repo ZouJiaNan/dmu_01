@@ -3,7 +3,7 @@ package com.casit.dmu_1.pojo.ct;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+import com.casit.dmu_1.pojo.Patient;
 /**
  * @author ZouJiaNan
  * @version 1.0.0
@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Ct {
+    public Patient patient;
     public Ct_image ct_image;
     public Ct_record ct_record;
     public Ct_scan_info ct_scan_info;

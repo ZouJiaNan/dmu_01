@@ -38,8 +38,8 @@ public class PatientController {
     @ApiOperation(value = "删除病患",notes = "删除病患")
     @ApiImplicitParam(name="id",value = "需要删除病患的id")
     @GetMapping("delete")
-    public ResultBean delete(@RequestParam(value = "id") int id){
-        return new ResultBean<Integer>(Statue.SUCCESS.code, Statue.SUCCESS.message, patientService.deletePatient(id));
+    public ResultBean delete(@RequestParam(value = "patient_id") int patient_id){
+        return new ResultBean<Integer>(Statue.SUCCESS.code, Statue.SUCCESS.message, patientService.deletePatient(patient_id));
     }
 
     @ApiOperation(value = "查询所有病患",notes = "查询所有病患")
